@@ -15,7 +15,7 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! I am time zone bot."
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"

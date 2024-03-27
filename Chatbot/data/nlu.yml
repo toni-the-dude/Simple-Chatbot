@@ -116,8 +116,8 @@ nlu:
 
 - intent: thanks # New
   examples: |
-  - thank you
-  - thanks
-  - great, thanks
-  - ty
-  - thx
+    - thank you
+    - thanks
+    - great, thanks
+    - ty
+    - thx
