@@ -19,6 +19,7 @@ This short project was made using the Rasa framework whilst following the Course
 ## Walkthrough
 
 <p>There are 4 main files which have been modified from the basic template.</p>
+
 <ol>
   <li>
     <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/nlu.yml">nlu.yml</a>
@@ -27,20 +28,32 @@ This short project was made using the Rasa framework whilst following the Course
 
   ![nlu](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase3.PNG?raw=true)
   </li>
+  
   <li>
     <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/stories.yml">stories.yml</a>
+    <p>Stories are a formatted conversation between the user and the AI chatbot to which the AI will usually adhere to.</p>
+    <p>The pattern can be inferred from the example below.</p>
+  
+  ![nlu](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase5.PNG?raw=true)
   </li>
+  
   <li>
     <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/domain.yml">domain.yml</a>
+    <p>A domain encompasses everything the AI should know. It specifies the intents, entities, slots, responses, and actions the bot should know about.</p>
+    <p>Entities and slots are tied by their function. If entities are the value to be extracted from a user's prompt, then slots are the location where that value is meant to end up in.</p>
+
+  ![nlu](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase6.PNG?raw=true)
   </li>
+  
   <li>
     <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/actions/actions.py">actions.py</a>
+    <p>Actions are functions that can make us of our slots and entities.</p>
+    <p>In my case, I have defined a single action that does something based on whether or not the value from a slot is found within my comically large dictionary. Namely, it tells the time.</p>
+    <p>To be able to have actions run, a section from the base template within "endpoints.yml" has been uncommented. Additionaly, the command "rasa run actions" must be run.</p>
+  
+  ![nlu](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase7.PNG?raw=true)
   </li>
 </ol>
-
-entities
-slots
-rasa run actions
 
 ## Conclusion
 
