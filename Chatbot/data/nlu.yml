@@ -97,22 +97,25 @@ nlu:
     - i need you to find a time zone
     - can you find me a time zone?
     - what time is it?
+    - tell me the time zone
 
 - intent: find_time_zone_for_location # New
   examples: |
-    - what is the time zone of London?
-    - time zone of Lisbon
-    - do you know the time zone of Berlin
-    - i need to know the time zone of Mumbai
+    - what is the time zone of [London](city)?
+    - time zone of [Lisbon](city)
+    - do you know the time zone of [Berlin](city)
+    - i need to know the time zone of [Mumbai](city)
+    - [Oslo](city) time zone
+    - what is the time in [Prague](city)
 
 - intent: city_info # New
   examples: |
-    - London
-    - San Francisco
-    - Toronto
-    - New Delhi
-    - Auckland
-    - Oslo
+    - [London](city)
+    - [San Francisco](city)
+    - [Toronto](city)
+    - [New Delhi](city)
+    - [Auckland](city)
+    - [Oslo](city)
 
 - intent: thanks # New
   examples: |
