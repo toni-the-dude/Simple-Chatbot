@@ -16,6 +16,15 @@ intents:
 entities: # New
   - city
 
+slots: # New
+  city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: city
+        auto_fill: True
+
+
 responses:
   utter_greet:
   - text: "Hey! I am time zone bot."
@@ -40,7 +49,7 @@ responses:
   - text: "Which city do you need the time zone of?"
 
   utter_finding_time_zone: # New
-  - text: "Ok, give me a second to look it up..."
+  - text: "Ok, give me a second to look up the time zone of {city}..."
 
   utter_you_are_welcome: # New
   - text: "You are welcome!"
