@@ -13,6 +13,9 @@ intents:
   - city_info # New
   - thanks # New
 
+actions: # New
+  - action_show_time_zone
+
 entities: # New
   - city
 
