@@ -20,14 +20,28 @@ This short project was made using the Rasa framework whilst following the Course
 
 <p>There are 4 main files which have been modified from the basic template.</p>
 <ol>
-  <li><a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/nlu.yml">nlu.yml</a></li>
-  <li><a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/stories.yml">stories.yml</a></li>
-  <li><a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/domain.yml">domain.yml</a></li>
-  <li><a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/actions/actions.py">actions.py</a></li>
+  <li>
+    <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/nlu.yml">nlu.yml</a>
+    <p>NLU (Natural Language Understanding) is the part of Rasa that performs intent classification, entity extraction, and response retrieval.</p>
+    <p>Below can be seen how the intent of the user can be defined by listing examples that ilustrate said intent. Furthermore, the words wrapped in square brackets are placeholders for what Rasa calls entities. They can be seen following the placeholders, wrapped in round brackets. I describe entities later.</p>
+
+  ![nlu](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase3.PNG?raw=true)
+  </li>
+  <li>
+    <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/data/stories.yml">stories.yml</a>
+  </li>
+  <li>
+    <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/domain.yml">domain.yml</a>
+  </li>
+  <li>
+    <a href="https://github.com/toni-the-dude/Simple-Chatbot/blob/main/Chatbot/actions/actions.py">actions.py</a>
+  </li>
 </ol>
 
 entities
 slots
 rasa run actions
+
+## Conclusion
 
 ![course](https://github.com/toni-the-dude/Simple-Chatbot/blob/main/.misc/showcase2.PNG?raw=true)
