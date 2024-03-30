@@ -1,6 +1,6 @@
 # Simple Chatbot
 ## Overview
-This short project was made using the Rasa framework whilst following the Coursera 2-hour guided project <a href="https://www.coursera.org/projects/chatbot-rasa-python">"Create Your First Chatbot with Rasa and Python"</a>. 
+This short project was made using the Rasa framework whilst following the 2-hour long Coursera guided project <a href="https://www.coursera.org/projects/chatbot-rasa-python">"Create Your First Chatbot with Rasa and Python"</a>. 
 
 <p>The chatbot embodies the simple functionality of telling the time zone of one of several cities.</p>
 
